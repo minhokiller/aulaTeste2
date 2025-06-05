@@ -5,6 +5,7 @@ def subtrai(a,b):
     return a - b
 
 def multiplica (a,b):
+    a = a + 2
     return a*b
 
 def divide (a,b):
