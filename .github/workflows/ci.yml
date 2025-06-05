@@ -21,6 +21,9 @@ jobs:
     - name: Instalar dependências
       run: pip install -r requirements.txt
 
+    - name: Ajustar PYTHONPATH
+      run: echo "PYTHONPATH=${{ github.workspace }}" >> $GITHUB_ENV
+
     - name: Rodar testes com feedback personalizado
       run: |
         echo "🧪 Iniciando testes automatizados..."
